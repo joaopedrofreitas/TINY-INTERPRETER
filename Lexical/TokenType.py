@@ -21,6 +21,7 @@ TokenType = Enum(
         'GREATER_EQUAL', # >=
 
         # Arithmetic operators
+        'POT',           # ^ -> POTENCIA   
         'ADD',           # +
         'SUB',           # -
         'MUL',           # *

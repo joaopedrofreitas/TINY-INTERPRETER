@@ -16,6 +16,7 @@ class SymbolTable:
         '>=': TokenType.GREATER_EQUAL,
 
         # operadores aritmeticos
+        '^': TokenType.POT,
         '+': TokenType.ADD,
         '-': TokenType.SUB,
         '*': TokenType.MUL,

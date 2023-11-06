@@ -4,7 +4,7 @@ from Lexical.SymbolTable import SymbolTable
 from Interpreter.SyntaticAnalysis import Syntatic
 
 TokenLst=[]
-a_lex = Lexical('Examples/if.tiny')
+a_lex = Lexical('Examples/exp_test.tiny')
 lex =  a_lex.prox_Token()
 TokenLst.append(lex)
 #print(lex.token, lex.type)

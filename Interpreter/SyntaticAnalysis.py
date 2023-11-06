@@ -214,6 +214,12 @@ class Syntatic:
             self.ProxToken()
             right = self.procIntTerm()
             left = BinaryIntExpr (linha, left, op, right)
+        
+        elif self.TokenList[self.Index].type == TokenType.POT:
+            op = BinaryIntExpr.Op.POT
+            self.ProxToken()
+            right = self.procIntTerm()
+            left = BinaryIntExpr (linha, left, op, right)
 
         return left
 

@@ -27,7 +27,7 @@ class Lexical:
                     elif c == '!':
                         lex.token += c
                         estado = 4
-                    elif c == ';' or c == '+' or c == '-' or c == '*' or c == '/' or c == '%':
+                    elif c == ';' or c == '+' or c == '-' or c == '*' or c == '/' or c == '%' or c=='^':
                         lex.token += c
                         estado = 7
                     elif c.isalpha() or c == '_':

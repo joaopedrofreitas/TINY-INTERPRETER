@@ -8,7 +8,7 @@ class Expr:
     pass 
 
 class BinaryIntExpr(Expr):
-  Op = Enum('Op', ['ADD', 'SUB', 'MUL', 'DIV', 'MOD'])
+  Op = Enum('Op', ['ADD', 'SUB', 'MUL', 'DIV', 'MOD','POT'])
 
   OPERATOR_FUNCTIONS = {
     Op.ADD: lambda x, y: x + y,
@@ -16,6 +16,7 @@ class BinaryIntExpr(Expr):
     Op.MUL: lambda x, y: x * y,
     Op.DIV: lambda x, y: x // y,
     Op.MOD: lambda x, y: x % y,
+    Op.POT: lambda x, y: x ** y,
   }
 
   def __init__(self, linha, left, operation, right):
